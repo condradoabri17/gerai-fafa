@@ -1,0 +1,46 @@
+.running-text {
+    width: 100%; /* Lebar sesuai kebutuhan */
+    overflow: hidden; /* Agar teks yang melebihi container tidak terlihat */
+    white-space: nowrap; /* Agar teks berjalan dalam satu baris */
+  }
+  
+  .running-text p {
+    display: inline-block; /* Menampilkan teks dalam satu baris */
+    animation: marquee 20s linear infinite; /* Animasi teks bergerak */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); } /* Awal posisi teks di luar container sebelah kanan */
+    100% { transform: translateX(-100%); } /* Akhir posisi teks di luar container sebelah kiri */
+  }
+
+  .map-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 (56.25%) */
+  }
+  .map-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+
+        .search-results {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .search-results .list-group-item {
+            cursor: pointer;
+        }
+        .search-results .highlight {
+            background-color: yellow;
+        }
+
+        .highlight {
+          background-color: yellow;
+      }
